@@ -9,5 +9,6 @@
     background: url('51XOzFSJOJL._SL1000_2.jpg') no-repeat center center;
     background-clip: content-box;
     background-size: cover;
+    border-radius: 3px;
     text-decoration: underline yellow dotted;
 }
