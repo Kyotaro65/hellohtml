@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js lesson1</title>
+    <link rel="stylesheet" type="text/css" href="csslesson1.css"> 
+</head>
+<body>
+    <h1 id="title">title1</h1>
+    <p id="element1">要素1</p>
+    <p id="element2">要素2</p>
+    <script type="text/javascript">
+    var h1=document.getElementById("title");
+    console.log(h1);
+    var title=h1.textContent;
+    console.log(title);
+    title="kkkk";
+    console.log(title);
+    setTimeout(function(){h1.textContent="kkkkk\\k";},4000);
+    var p3=document.createElement("p");
+    var p3txt=document.createTextNode("要素3");
+    document.body.appendChild(p3).appendChild(p3txt);
+    h1.appendChild(p3).appendChild(p3txt);
+    setTimeout(function(){h1.textContent="kkkkk";},2000);
+    window.alert("alert!");
+    var resc=window.confirm("confirm!");
+    if(resc){window.alert("Thanks!");}else{window.alert("I'm sad.");}
+    var resp=window.prompt("prompt!","name");
+    console.log(resp);
+    setTimeout(function(){h1.textContent="kkkkk\\";},4000);
+    </script>
+</body>
+</html>
